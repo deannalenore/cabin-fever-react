@@ -1,4 +1,4 @@
-## Project Title
+# Project Title
 Cabin Fever: The Quarantine Match Game
 
 # Description
