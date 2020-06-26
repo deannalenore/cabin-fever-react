@@ -16,8 +16,8 @@ The inspiration behind Cabin Fever centered around the current global pandemic t
 XXXXXXX
 
 # Contributors
-- @deannalenore
-- CherisC
+- https://github.com/CherisC
+- https://github.com/deannalenore
 
 
 
