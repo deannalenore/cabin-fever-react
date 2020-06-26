@@ -15,5 +15,9 @@ The inspiration behind Cabin Fever centered around the current global pandemic t
 # How it Works
 XXXXXXX
 
+# Contributors
+- @deannalenore
+- CherisC
+
 
 
