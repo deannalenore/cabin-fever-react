@@ -1,12 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+
 import * as serviceWorker from './serviceWorker';
+import BeachCards from './Components/BeachCards';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <BeachCards />
   </React.StrictMode>,
   document.getElementById('root')
 );
