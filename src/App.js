@@ -1,7 +1,10 @@
 import React from "react";
 import "./App.css";
 import { Jumbotron, Button } from "react-bootstrap";
-import "./Scoreboard.js";
+import Scoreboard from "./Components/Scoreboard";
+import BeachCards from "./Components/BeachCards";
+import "./Components/BeachCards.css"
+
 
 function App() {
   return (
@@ -18,6 +21,8 @@ function App() {
           <Button variant="primary">Let's Go!</Button>
         </p>
       </Jumbotron>
+      <Scoreboard />
+      <BeachCards />
     </div>
   );
 }

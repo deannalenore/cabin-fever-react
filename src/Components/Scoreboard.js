@@ -1,8 +1,8 @@
 import React, { Component } from "react";
-import "./App.js";
+import "../App.js";
 import ReactDOM from "react-dom";
 
-class Score extends Component {
+class Scoreboard extends Component {
   render() {
     return (
       <div className="Score">
@@ -13,4 +13,4 @@ class Score extends Component {
     );
   }
 }
-export default Score;
+export default Scoreboard;
