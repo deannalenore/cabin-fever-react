@@ -15,9 +15,8 @@ function App() {
           see from afar. . .for now. Make one match in five attempts, and YOU
           WIN!
         </p>
-        <p>
-          <Button variant="primary">Let's Go!</Button>
-        </p>
+
+        <Button variant="primary">Let's Go!</Button>
       </Jumbotron>
       <Scoreboard />
       <BeachCards />
