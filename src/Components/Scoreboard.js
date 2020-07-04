@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "../App.js";
 import ReactDOM from "react-dom";
+import {connect} from 'react-redux';
 
 class Scoreboard extends Component {
   render() {

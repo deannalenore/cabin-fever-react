@@ -2,12 +2,15 @@ import React from "react";
 import "./App.css";
 import { Jumbotron, Button } from "react-bootstrap";
 import Scoreboard from "./Components/Scoreboard";
-import BeachCards from "./Components/BeachCards";
-import "./Components/BeachCards.css"
+import Board from './Components/Board/Board';
+
 
 
 function App() {
+ 
+
   return (
+   
     <div className="App">
       <Jumbotron>
         <h1>Cabin Fever</h1>
@@ -17,14 +20,17 @@ function App() {
           see from afar. . .for now. Make one match in five attempts, and YOU
           WIN!
         </p>
-        <p>
-          <Button variant="primary">Let's Go!</Button>
-        </p>
+
+        <Button variant="primary">Let's Go!</Button>
       </Jumbotron>
       <Scoreboard />
-      <BeachCards />
+      <Board />
+     
     </div>
+
+ 
   );
 }
 
 export default App;
+
