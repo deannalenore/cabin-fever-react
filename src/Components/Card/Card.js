@@ -1,14 +1,14 @@
-import React from 'react'
-import './Card.css'
+import React from "react";
+import "./Card.css";
 
-const Card = props => {
-  const {frontImg, back, flipped, onClick} = props
-  const img = flipped ? frontImg : back
+const Card = (props) => {
+  const { frontImg, back, flipped, onClick } = props;
+  const img = flipped ? frontImg : back;
   return (
     <div className="Card" onClick={onClick}>
-      <img src={img} alt=""/>
+      <img src={img} alt="" />
     </div>
-  )
-}
+  );
+};
 
-export default Card
+export default Card;

@@ -1,17 +1,21 @@
 import React, { Component } from "react";
 import "../App.js";
 import ReactDOM from "react-dom";
-import {connect} from 'react-redux';
+import { connect } from "react-redux";
 
 class Scoreboard extends Component {
   render() {
     return (
       <div className="Score">
-        <h2>Player 1</h2>
         <h1>Your Score</h1>
-        <button>Score</button>
+        <span>{this.props.score}</span>
       </div>
     );
   }
 }
-export default Scoreboard;
+function mapStateToProps(state) {
+  const { score } = state;
+  return { score: score };
+}
+
+export default connect(mapStateToProps)(Scoreboard);

@@ -2,15 +2,10 @@ import React from "react";
 import "./App.css";
 import { Jumbotron, Button } from "react-bootstrap";
 import Scoreboard from "./Components/Scoreboard";
-import Board from './Components/Board/Board';
-
-
+import Board from "./Components/Board/Board";
 
 function App() {
- 
-
   return (
-   
     <div className="App">
       <Jumbotron>
         <h1>Cabin Fever</h1>
@@ -21,16 +16,12 @@ function App() {
           WIN!
         </p>
 
-        <Button variant="primary">Let's Go!</Button>
+        <Button variant="primary">Reset</Button>
       </Jumbotron>
       <Scoreboard />
       <Board />
-     
     </div>
-
- 
   );
 }
 
 export default App;
-
