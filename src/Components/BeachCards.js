@@ -1,15 +1,6 @@
 import React, { Component } from "react";
 import "./BeachCards.css";
 
-function BeachCards = () {
-  const beachCards  = ['./Assets/images/sunrise-rock-beach.jpg', './Assets/images/evening-beach.jpg', './Assets/images/balos-beach.jpg', '.Assets/images/rock-beach.jpg', './Assets/images/sunny-beach.jpg', './Assets/images/beach-of-torregorda.jpg'];
-  return (
-      <ol>
-          {beachCards.map(beachCard => <div>{beachCard}</div>}
-      </ol>
-  );
-}
-
 class BeachCards extends Component {
   render() {
     return (
@@ -41,10 +32,48 @@ class BeachCards extends Component {
           alt="torr beach"
         />*/}
       </div>
-
-    
-    
-  }
+    }
 }
+const BeachImages = [
+  {
+    title: "ImageOne",
+    imageUrl: "./Assets/images/balos-beach.jpg"
+  },
+
+  {
+    title: "ImageTwo",
+    imageUrl: "./Assets/images/beach-of-torregorda.jpg"
+  },
+
+  {
+  title: "ImageThree",
+  imageUrl: "/Assets/images/evening-beach.jpg"
+  },
+
+  {
+    title: "ImageFour",
+    imageUrl:  "./Assets/images/rock-beach.jpg"
+
+  },
+
+  {
+    title: "ImageFive",
+    imageUrl: "./Assets/images/sunny-beach.jpg"
+  },
+
+  {
+    title: "ImageSix",
+    imageUrl: "./Assets/images/sunrise-rock-beach.jpg"
+  }
+]
+
+  return (
+      <ol>
+          {beachCards.map(beachCard => <div>{beachCard}</div>}
+      </ol>
+  );
+
+
+
 //js comment to do flip action:document.querySelector("#myCard").classList.toggle("flip")
 export default BeachCards;
