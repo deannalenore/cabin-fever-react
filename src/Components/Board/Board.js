@@ -63,10 +63,12 @@ const Board = (props) => {
   }, [checkers, completed]);
 
   return (
-    <div className="Board">
-      {cards.map((card) => (
-        <Card {...card} onClick={onCardClick(card)} key={card.id} />
-      ))}
+    <div className="container">
+      <div className="Board">
+        {cards.map((card) => (
+          <Card {...card} onClick={onCardClick(card)} key={card.id} />
+        ))}
+      </div>
     </div>
   );
 };

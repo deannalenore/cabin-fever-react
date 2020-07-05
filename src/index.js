@@ -17,9 +17,15 @@ const reducer = (state = initialState, action) => {
       ...state,
       score: state.score + action.payload,
     };
+  } else if (action.type === "RESET_SCORE") {
+    return {
+      ...state,
+      score: 0,
+    };
   }
   return state;
 };
+
 // switch (action.type) {
 //   case "YOU_WIN":
 //     return {
