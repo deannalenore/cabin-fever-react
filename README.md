@@ -13,7 +13,7 @@ The inspiration behind Cabin Fever centered around the current global pandemic t
 - This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 # How it Works
-Cabin Fever is a single-player game that presents three cards with hidden images to be revealed during the game. The player will click on a single card to reveal an image, and then select a second card to determine if there is a match. If three matches are found in five attempts, an alert will display, indicating that the player has won. If three matches are not made, an alert will display, stating that three matches were not made and offer the player an opportunity to try again. If the player clicks the "Try Again" button, the game will start over. The number of matches in each game are tabulated at the top of the screen. Cards are revealed using CSS animation. 
+Cabin Fever is a single-player game that presents a series of cards with hidden images to be revealed during the game. The player will click on a single card to reveal an image, and then select a second card to determine if there is a match. If a match is made, the cards remain uncovered, and the player earns one point. If a match is not made, the cards will reset, and the player can continue uncovering cards until a match is made. At anytime, the player can restart the game, by clicking the "Reset" button. 
 
 # Authors
 * [CherisC](https://github.com/CherisC)
