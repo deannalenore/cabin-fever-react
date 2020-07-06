@@ -7,30 +7,39 @@ import { Provider } from "react-redux";
 import { createStore } from "redux";
 
 const initialState = {
-  matches: 0,
-  player: [
-    {
-      name: "Player One",
-    },
-  ],
+  score: 0,
+  GameInProgress: false,
 };
 
 const reducer = (state = initialState, action) => {
-  switch (action.type) {
-    case "YOU_WIN":
-      return {
-        ...state,
-        score: state.score + action.payload.points,
-      };
-    case "YOU_LOSE":
-      return {
-        ...state,
-        score: state.score - action.payload.points,
-      };
-    default:
-      return state;
+  if (action.type === "INCREASE_SCORE") {
+    return {
+      ...state,
+      score: state.score + action.payload,
+    };
+  } else if (action.type === "RESET_SCORE") {
+    return {
+      ...state,
+      score: 0,
+    };
   }
+  return state;
 };
+
+// switch (action.type) {
+//   case "YOU_WIN":
+//     return {
+//       ...state,
+//       score: state.score + action.payload.points,
+//     };
+//   case "YOU_LOSE":
+//     return {
+//       ...state,
+//       score: state.score - action.payload.points,
+//     };
+//   default:
+//     return state;
+//}
 
 const store = createStore(reducer);
 
