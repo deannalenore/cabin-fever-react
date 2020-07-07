@@ -3,10 +3,17 @@ import "../App.js";
 import { connect } from "react-redux";
 
 class Scoreboard extends Component {
+  constructor(props) {
+    super(props);
+    this.state =  {
+      title: "Your Score"
+    }
+  }
+
   render() {
     return (
       <div className="Score">
-        <h1>Your Score</h1>
+        <h1>{this.state.title}</h1>
         <span>{this.props.score}</span>
       </div>
     );
