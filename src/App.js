@@ -17,10 +17,11 @@ function App() {
           see from afar. . .for now. Receive one point for each match to
           complete the game!
         </p>
-      </Jumbotron>
+      </Jumbotron>    
       <Scoreboard />
-      <Board />
       <Button onClick={() => dispatch({ type: "RESET_SCORE" })}>Reset</Button>
+      <Board />
+      
     </div>
   );
 }

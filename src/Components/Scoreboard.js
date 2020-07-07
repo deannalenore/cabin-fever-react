@@ -15,6 +15,8 @@ class Scoreboard extends Component {
       <div className="Score">
         <h1>{this.state.title}</h1>
         <span>{this.props.score}</span>
+        <br/>
+        <br/>
       </div>
     );
   }
